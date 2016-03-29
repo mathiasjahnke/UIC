@@ -6,12 +6,12 @@ import processing.core.PConstants;
 import processing.core.PFont;
 
 /**
- * a simple check box class to use within <a href="http://www.processing.org">processing</a>.
+ * a check box class to use within <a href="http://www.processing.org">processing</a>.
  * action handling should by done via the e.g. mouseClicked() functions etc. <br>
  * The PCheckBox is always a square. <br> <br>
  * the x- and y-coordinate are representing the the center of the PCheckBox
  * @author Mathias Jahnke, Technische Universit&auml;t M&uuml;nchen, <a href="http://www.lfk.bgu.tum.de">Chair of Cartography</a>
- * @version 0.0.1
+ * @version 0.0.2
  * @since 04.07.2014
  */
 public class PCheckBox extends PButtonComponent implements UIConstants{

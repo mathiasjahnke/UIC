@@ -2,6 +2,8 @@ package mj.processing.button;
 
 import java.util.UUID;
 
+//http://www.creativeapplications.net/processing/craft-your-processing-sketches-in-eclipse/
+
 /**
  * A components base-class implementing the respective interface (PIComponent). The components origin is the components upper 
  * left corner. <br> No styling associated with the component.  <br>
