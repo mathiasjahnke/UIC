@@ -6,7 +6,10 @@ import processing.core.PFont;
 
 /**
  * A button class to use within <a href="http://www.processing.org">processing</a>.
- * Action handling should by done via processings mouseClicked() functions etc. <br>
+ * Action handling should by done via processing's mouseClicked() functions etc. <br>
+ * 
+ * TODO add a box model for padding and margins like the css boxmodel which support auto arrangements
+ * within groups.
  * 
  * @author Mathias Jahnke, Technische Universit&auml;t M&uuml;nchen, <a href="http://www.lfk.bgu.tum.de">Chair of Cartography</a>
  * @version 0.0.2
