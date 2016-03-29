@@ -1,5 +1,4 @@
-# UIC
+## user interface components
 
-## some ideas
-
-some ideas of user interface components for processing 
+some ideas of user interface components for processing (processing.org). 
+this is work in Progress, not stable, not well documented and no good design.
