@@ -47,7 +47,7 @@ private PApplet p;
 	
 	/**
 	 * creates a new PButton object. With its center point at x, y and a size of width and height.
-	 * The label font is Arial 14point. to change this use the appropriate functions. 
+	 * The label font is Arial 14 pt. to change this use the appropriate functions. 
 	 * @param x x-value of the buttons center point in screen coordinates
 	 * @param y y-value of the buttons center point in screen coordinates
 	 * @param width button width
