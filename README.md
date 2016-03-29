@@ -7,4 +7,5 @@ to run the project, processings **core.jar** needs to be on the class path. the 
 
 great thanks to the [processing foundation](https://processingfoundation.org/) for their work on processing, p5.js and processing.py.
 
-an tutorial for using processing within eclipse written by Ricardo Sanchez on [creative applications network](http://www.creativeapplications.net/processing/craft-your-processing-sketches-in-eclipse/)
+
+a tutorial for using processing within eclipse written by Ricardo Sanchez on [creative applications network](http://www.creativeapplications.net/processing/craft-your-processing-sketches-in-eclipse/)
