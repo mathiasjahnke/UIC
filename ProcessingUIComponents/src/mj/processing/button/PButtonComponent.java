@@ -1,14 +1,14 @@
 package mj.processing.button;
 
 /**
- * Extending PComponent for using as a base for a button. <br>
+ * Extending PComponent for using as a base for e.g. button. <br>
  * 
  * @author Mathias Jahnke, Technische Universit&auml;t M&uuml;nchen, <a href="http://www.lfk.bgu.tum.de">Chair of Cartography</a>
  * @version 0.0.1
  * @since 15.03.2016
  *
  */
-public class PButtonComponent extends PComponent implements PIButtonComponent{
+public abstract class PButtonComponent extends PComponent implements PIButtonComponent{
 	
 	private boolean checked;
 	

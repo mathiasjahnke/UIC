@@ -7,13 +7,13 @@ import java.util.UUID;
 /**
  * A components base-class implementing the respective interface (PIComponent). The components origin is the components upper 
  * left corner. <br> No styling associated with the component.  <br>
- * the PComponents draw()-methods must be overriden by a class extending this one.  
+ * the PComponents draw()-method is abstract and must be overridden by a class extending this one.  
  * @author Mathias Jahnke, Technische Universit&auml;t M&uuml;nchen, <a href="http://www.lfk.bgu.tum.de">Chair of Cartography</a>
  * @version 0.0.1
  * @since 07.03.2016
  *
  */
-public class PComponent implements PIComponent {
+public abstract class PComponent implements PIComponent {
 
 	private float width;
 	private float height;
@@ -120,12 +120,12 @@ public class PComponent implements PIComponent {
 
 
 	/**
-	 * the base class draw() method is not implemented and has to be overridden by any subclass.<br><br>
+	 * the abstract draw() method needs to be implemented by any subclass.<br><br>
 	 */
 	@Override
-	public void draw() {	
-		System.out.println("no draw method implemented for PComponent: (" + componentId + ")");
+	public abstract void draw(); //{	
+		//System.out.println("no draw method implemented for PComponent: (" + componentId + ")");
 
-	}
+	//}
 
 }
