@@ -1,10 +1,11 @@
 package mj.processing.button;
 
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.UUID;
+
+import processing.event.MouseEvent;
 
 /**
  * The PButtonGroup is for logical structuring of the PRadioButtons or PButtons.
@@ -13,7 +14,7 @@ import java.util.UUID;
  * @version 0.0.2
  * @since 23.02.2015
  */
-public class PButtonGroup implements MouseListener{
+public class PButtonGroup {
 
 	private ArrayList<PIButtonComponent> components;
 	
@@ -73,52 +74,82 @@ public class PButtonGroup implements MouseListener{
 		this.components.remove(component);
 	}
 	
-	/**
-	 * not implemented
-	 */
-	@Override
-	public void mouseClicked(MouseEvent e) {
-		
-	}
-
-	/**
-	 * not implemented
-	 */
-	@Override
-	public void mousePressed(MouseEvent e) {
-		
-	}
 	
 	/**
-	 * Listens which PRadiobutton is marked by a mouse release
+	 * the mouseEvent() method is needed to bring mouse behavior to objects. <br>
+	 * this method is needed instead of using MouseListener implementations.
+	 * implementation based on Processing's <a href="https://processing.org/examples/mousefunctions.html">mouse functions</a> example.
+	 * mouse actions:
+	 * PRESS = 1;
+  	 * RELEASE = 2;
+     * CLICK = 3;
+     * DRAG = 4;
+     * MOVE = 5;
+     * ENTER = 6;
+     * EXIT = 7;
+     * WHEEL = 8;
+	 * @param event the mouse event
 	 */
-	@Override
-	public void mouseReleased(MouseEvent e) {
-		Iterator<PIButtonComponent> iter = components.iterator();
-		while(iter.hasNext()){
-			PIButtonComponent rb = (PIButtonComponent) iter.next();
-			if(rb.contains(e.getX(), e.getY())){
-				this.nameOfMarkedUUID = rb.getComponentId();
+	public void mouseEvent(MouseEvent event){
+		
+		if (event.getAction() == 2) {
+			Iterator<PIButtonComponent> iter = components.iterator();
+			while(iter.hasNext()){
+				PIButtonComponent rb = (PIButtonComponent) iter.next();
+				if(rb.contains(event.getX(), event.getY())){
+					this.nameOfMarkedUUID = rb.getComponentId();
+				}
 			}
+			updateComponents();
 		}
-		updateComponents();
 	}
-
-	/**
-	 * not implemented
-	 */
-	@Override
-	public void mouseEntered(MouseEvent e) {
-		
-	}
-
-	/**
-	 * not implemented
-	 */
-	@Override
-	public void mouseExited(MouseEvent e) {
-		
-	}
+	
+//	/**
+//	 * not implemented
+//	 */
+//	@Override
+//	public void mouseClicked(MouseEvent e) {
+//		
+//	}
+//
+//	/**
+//	 * not implemented
+//	 */
+//	@Override
+//	public void mousePressed(MouseEvent e) {
+//		
+//	}
+//	
+//	/**
+//	 * Listens which PRadiobutton is marked by a mouse release
+//	 */
+//	@Override
+//	public void mouseReleased(MouseEvent e) {
+//		Iterator<PIButtonComponent> iter = components.iterator();
+//		while(iter.hasNext()){
+//			PIButtonComponent rb = (PIButtonComponent) iter.next();
+//			if(rb.contains(e.getX(), e.getY())){
+//				this.nameOfMarkedUUID = rb.getComponentId();
+//			}
+//		}
+//		updateComponents();
+//	}
+//
+//	/**
+//	 * not implemented
+//	 */
+//	@Override
+//	public void mouseEntered(MouseEvent e) {
+//		
+//	}
+//
+//	/**
+//	 * not implemented
+//	 */
+//	@Override
+//	public void mouseExited(MouseEvent e) {
+//		
+//	}
 	
 	/**
 	 * updates the components only one per PRadioButtonGroup can be marked
