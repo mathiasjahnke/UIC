@@ -42,10 +42,9 @@ public class ExamplePRadioButton extends PApplet{
 		
 		if (rb1.isChecked()) {
 			fill(color(120, 120, 120));
-		} // else if (rb3.isChecked()){
-		//	fill(color(50, 126, 35));
-		//}
-		else if(rb2.isChecked()){
+		} else if (rb3.isChecked()){
+			fill(color(50, 126, 35));
+		} else if(rb2.isChecked()){
 			fill(color(120, 54, 189));
 		}
 		ellipseMode(CENTER);
