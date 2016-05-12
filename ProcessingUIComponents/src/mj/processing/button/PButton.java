@@ -6,7 +6,7 @@ import processing.core.PFont;
 
 /**
  * A button class to use within <a href="http://www.processing.org">processing</a>.
- * Action handling should by done via processing's mouseClicked() functions etc. <br>
+ * Action handling should by done via registerMethod(), so taht the button can react on user input <br>
  * 
  * TODO add a box model for padding and margins like the css boxmodel which support auto arrangements
  * within groups.
