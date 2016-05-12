@@ -9,7 +9,10 @@ import processing.event.MouseEvent;
 
 /**
  * The PButtonGroup is for logical structuring of the PRadioButtons or PButtons.
- * Only one member of the group can be marked/checked at a time. 
+ * Only one member of the group can be marked/checked at a time. <br>
+ * For mouse interaction use the registerMethod() function within a PApplet. <br>
+ * e.g.<br>
+ * {@code this.registerMethod("mouseEvent",nameOfPRadioButton);} 
  * @author Mathias Jahnke, Technische Universit&auml;t M&uuml;nchen, <a href="http://www.lfk.bgu.tum.de">Chair of Cartography</a>
  * @version 0.0.2
  * @since 23.02.2015

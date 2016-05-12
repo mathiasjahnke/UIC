@@ -1,5 +1,6 @@
 package mj.processing.button;
 
+import mj.processing.boxmodel.BoxModel;
 import processing.core.PApplet;
 import processing.core.PConstants;
 import processing.core.PFont;
@@ -19,6 +20,8 @@ public class PButton extends PButtonComponent{
 	
 private PApplet p;
 	
+	private BoxModel boxModel;
+
 	//adapt the button width and height to the width and height of the label
 	private boolean adaptToLabel;
 
@@ -39,7 +42,8 @@ private PApplet p;
 	private String text;
 
 	/**
-	 * creates a new PButtonobject. <br> All attributes have to be set by appropriate functions like setSize, setLocaten etc. 
+	 * creates a new PButtonobject. <br> 
+	 * All attributes have to be set by appropriate functions like setSize, setLocaten etc. 
 	 */
 	public PButton() {
 	}

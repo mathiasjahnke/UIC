@@ -4,6 +4,13 @@ import mj.processing.button.PButtonGroup;
 import mj.processing.button.PRadioButton;
 import processing.core.PApplet;
 
+/**
+ * Example for the usage of PRadioButton and PButtonGroup.
+ * 
+ * @author Mathias Jahnke, Technische Universit&auml;t M&uuml;nchen, <a href="http://www.lfk.bgu.tum.de">Chair of Cartography</a>
+ * @version 0.0.1
+ * @since 12.05.2016
+ */
 public class ExamplePRadioButton extends PApplet{
 
 	private PRadioButton rb1;
