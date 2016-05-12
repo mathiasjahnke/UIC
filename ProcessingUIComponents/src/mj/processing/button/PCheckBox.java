@@ -4,6 +4,7 @@ import mj.processing.constants.UIConstants;
 import processing.core.PApplet;
 import processing.core.PConstants;
 import processing.core.PFont;
+import processing.event.MouseEvent;
 
 /**
  * a check box class to use within <a href="http://www.processing.org">processing</a>.
@@ -118,6 +119,31 @@ public class PCheckBox extends PButtonComponent implements UIConstants{
 				p.line(getX() - (getWidth() * (2.f/6)), getY() - (getWidth() * (2.f/6)), getX() + (getWidth() * (2.f/6)), getY() + (getWidth() * (2.f/6)));
 				p.line(getX() - (getHeight() * (2.f/6)), getY() + (getHeight() * (2.f/6)), getX() + (getHeight() * (2.f/6)), getY() - (getHeight() * (2.f/6)));
 				break;
+			}
+		}
+		
+	}
+	
+	/**
+	 * the mouseEvent() method is needed to bring mouse behavior to objects. <br>
+	 * this method is needed instead of using MouseListener implementations.
+	 * implementation based on Processing's <a href="https://processing.org/examples/mousefunctions.html">mouse functions</a> example.
+	 * mouse actions:
+	 * PRESS = 1;
+  	 * RELEASE = 2;
+     * CLICK = 3;
+     * DRAG = 4;
+     * MOVE = 5;
+     * ENTER = 6;
+     * EXIT = 7;
+     * WHEEL = 8;
+	 * @param event
+	 */
+	public void mouseEvent(MouseEvent event){
+		
+		if(event.getAction() == 2){
+			if(this.contains(p.mouseX, p.mouseY)){
+				this.toggleChecked();
 			}
 		}
 		
