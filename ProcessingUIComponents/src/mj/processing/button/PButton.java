@@ -8,8 +8,8 @@ import processing.core.PFont;
  * A button class to use within <a href="http://www.processing.org">processing</a>.
  * Action handling should by done via registerMethod(), so taht the button can react on user input <br>
  * 
- * TODO add a box model for padding and margins like the css boxmodel which support auto arrangements
- * within groups.
+ * TODO add a box model for padding and margins like the css boxmodel to support auto arrangements
+ * of elements within groups.
  * 
  * @author Mathias Jahnke, Technische Universit&auml;t M&uuml;nchen, <a href="http://www.lfk.bgu.tum.de">Chair of Cartography</a>
  * @version 0.0.2
@@ -30,9 +30,6 @@ private PApplet p;
 	private Integer fillHighlight;
 	private int textColor;
 	private int textColorHighlight;
-	
-	private float marginTop, marginRight, marginBottom, marginLeft;
-	private float paddingTop, paddingRight, paddingBottom, paddingLeft;
 	
 	private float cornerRadius;
 	private float outlineWeight;
@@ -281,55 +278,55 @@ private PApplet p;
 		this.outlineWeight = outlineWeight;
 	}
 	
-	/**
-	 * sets the margin for top, right, bottom and left
-	 * @param top margin in pixel
-	 * @param right margin in pixel
-	 * @param bottom margin in pixel
-	 * @param left margin in pixel
-	 */
-	public void setMargin(float top, float right, float bottom, float left){
-		this.marginTop = top;
-		this.marginRight = right;
-		this.marginBottom = bottom;
-		this.marginLeft = left;
-	}
+//	/**
+//	 * sets the margin for top, right, bottom and left
+//	 * @param top margin in pixel
+//	 * @param right margin in pixel
+//	 * @param bottom margin in pixel
+//	 * @param left margin in pixel
+//	 */
+//	public void setMargin(float top, float right, float bottom, float left){
+//		this.marginTop = top;
+//		this.marginRight = right;
+//		this.marginBottom = bottom;
+//		this.marginLeft = left;
+//	}
+//	
+//	/**
+//	 * sets the margin for all four sides (top, right, bottom and left)
+//	 * @param all value for all margins in pixel
+//	 */
+//	public void setMargin(float all){
+//		this.marginTop = all;
+//		this.marginRight = all;
+//		this.marginBottom = all;
+//		this.marginLeft = all;
+//	}
+//	
+//	/**
+//	 * sets the padding for top, right, bottom, left.
+//	 * @param top padding in pixel
+//	 * @param right padding in pixel
+//	 * @param bottom padding in pixel
+//	 * @param left padding in pixel
+//	 */
+//	public void setPadding(float top, float right, float bottom, float left){
+//		this.paddingTop = top;
+//		this.paddingRight = right;
+//		this.paddingBottom = bottom;
+//		this.paddingLeft = left;
+//	}
 	
-	/**
-	 * sets the margin for all four sides (top, right, bottom and left)
-	 * @param all value for all margins in pixel
-	 */
-	public void setMargin(float all){
-		this.marginTop = all;
-		this.marginRight = all;
-		this.marginBottom = all;
-		this.marginLeft = all;
-	}
-	
-	/**
-	 * sets the padding for top, right, bottom, left.
-	 * @param top padding in pixel
-	 * @param right padding in pixel
-	 * @param bottom padding in pixel
-	 * @param left padding in pixel
-	 */
-	public void setPadding(float top, float right, float bottom, float left){
-		this.paddingTop = top;
-		this.paddingRight = right;
-		this.paddingBottom = bottom;
-		this.paddingLeft = left;
-	}
-	
-	/**
-	 * sets the padding for all four sides (top, right, bottom and left)
-	 * @param all value for all paddings in pixel
-	 */
-	public void setPadding(float all){
-		this.paddingTop = all;
-		this.paddingRight = all;
-		this.paddingBottom = all;
-		this.paddingLeft = all;
-	}
+//	/**
+//	 * sets the padding for all four sides (top, right, bottom and left)
+//	 * @param all value for all paddings in pixel
+//	 */
+//	public void setPadding(float all){
+//		this.paddingTop = all;
+//		this.paddingRight = all;
+//		this.paddingBottom = all;
+//		this.paddingLeft = all;
+//	}
 	
 	
 	/**

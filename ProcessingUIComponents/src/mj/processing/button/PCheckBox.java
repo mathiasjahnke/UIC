@@ -137,7 +137,7 @@ public class PCheckBox extends PButtonComponent implements UIConstants{
      * ENTER = 6;
      * EXIT = 7;
      * WHEEL = 8;
-	 * @param event
+	 * @param event the MouseEvent
 	 */
 	public void mouseEvent(MouseEvent event){
 		
