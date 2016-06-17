@@ -94,6 +94,7 @@ public class PCheckBox extends PButtonComponent implements UIConstants{
 	 */
 	public void draw(){
 		p.rectMode(PConstants.CENTER);
+		p.stroke(0);
 		//draw the box and the label
 		p.textAlign(PConstants.LEFT, PConstants.CENTER);
 		p.textFont(this.labelFont);
